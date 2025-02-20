@@ -3,6 +3,7 @@ package com.example.fitnessTracker.model;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -29,8 +30,29 @@ public class AppUser {
     @Column(name = "PASSWORD")
     private String password;
 
-    @Column(name = "CONTACT_NUMBER")
-    private String contactNumber;
+    @Column(name = "DOB")
+    private LocalDate dob;
+
+    @Column(name = "GENDER")
+    private String gender;
+
+    @Column(name = "CURRENT_WEIGHT")
+    private String currentWeight;
+
+    @Column(name = "TARGET_WEIGHT")
+    private String targetWeight;
+
+    @Column(name = "HEIGHT")
+    private String height;
+
+    @Column(name = "GOAL")
+    private String goal;
+
+    @Column(name = "FITNESS_LEVEL")
+    private String fitnessLevel;
+
+    @Column(name = "FOCUS_PART")
+    private String focusPart;
 
     @Column(name = "DELETED")
     private String deleted;
