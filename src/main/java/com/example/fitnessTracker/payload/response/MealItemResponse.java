@@ -4,7 +4,6 @@ import com.example.fitnessTracker.model.MealItem;
 import lombok.*;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Getter
@@ -32,6 +31,7 @@ public class MealItemResponse {
                 .build();
 
     }
+
     public static List<MealItemResponse> buildResponseList(List<MealItem> list) {
         return list.stream().map(MealItemResponse::buildResponse).collect(Collectors.toList());
     }
