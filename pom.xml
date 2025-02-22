@@ -56,12 +56,6 @@
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-			<version>10.0.0</version> <!-- Use the latest version -->
-		</dependency>
-
 	</dependencies>
 
 	<build>
