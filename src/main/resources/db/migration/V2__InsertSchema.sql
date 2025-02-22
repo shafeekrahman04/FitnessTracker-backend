@@ -1,4 +1,9 @@
 use fitness_tracker;
+DELETE FROM exercise;
+DELETE FROM meal_item;
+
+ALTER TABLE exercise AUTO_INCREMENT = 1;
+ALTER TABLE meal_item AUTO_INCREMENT = 1;
 
 INSERT INTO exercise (name, body_part)
 VALUES
